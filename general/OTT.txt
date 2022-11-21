@@ -1,0 +1,77 @@
+OTT: Over The Top platform => where content streams directly over the internet instead of 
+	through traditional avenues such as television via satellite or cable television 
+	connection, have taken over. People want more 
+	options and more control over what they watch.
+Examples: Netflix, Hulu, Disney+, ESPN+
+
+OTT Technology:	
+	1: Broadcasters upload video content to an OTT video hosting platform
+	2: The video host transmits the data to remote servers via a content delivery network (CDN)
+	3: Viewers select the content they want to stream on the user-facing video gallery
+	4: The video player on the device pulls the video content from the CDN’s server with the internet 
+
+Types of OTT:
+	1: Live Streaming
+	2: Video on Demand (VOD)
+
+1. VOD: VOD is pre-recorded and can be accessed on-demand. They can pause, rewind, or fast-forward content. 
+	VOD is perfect for a large number of entertainment and e-learning formats. VOD usually represent 
+	high-quality content as they undergo an editing process before being released on OTT broadcast media platforms. 
+
+	Buisness Models: 
+		1. Subscription Video-on-Demand (SVOD)
+		2. Transactional Video-on-Demand (TVOD) (pay per view)
+		3. Advertising Video-on-Demand (AVOD)
+	Advantages: 
+		1. Watch at any time: users can  play content whenever they want. Unlike “linear” TV programming, which only 
+			broadcasts in real time, VOD doesn’t rely on a set schedule.
+		2. Control what they watch: users have more opportunities to pick and choose what they watch, compared to 
+			traditional TV scheduling. 
+		3.Use media controls: users can play, pause, rewind, fast forward, and completely control how they watch content.
+
+2. Live Streaming: Live streams are recorded and streamed in real-time. Live streaming requires an extra step than VOD
+	which is encoders.
+	(Encoding) => The process by which raw video is converted into a digital format (compatible with online players and devices) 
+	is known as encoding.
+
+Types of Encoders: 
+	1. Software Encoders
+	2. Hardware Encoders
+
+1. Software Encoders: It is a video conversion programs that run on a local computer. Software encoders have graphic 
+	interfaces to manage the conversion process and allow control over elements such as bitrate and stream quality.
+
+	Benefit: Less costly.
+
+	Drawback:
+		Main drawback is that software encoders are not dedicated devices. Computers are designed for multitasking and 
+	perform multiple actions at once. They lack the robustness and speed of hardware devices since they cannot 
+	dedicate their full resources to the live stream encoding process.
+	
+Example: 
+	OBS Studio (Free, Open Source), Adobe Media Encoder, Telestream Wirecast (Best)
+
+2. Hardware Encoders: they are standalone, dedicated devices that do NOT require a pc to run and whose only purpose is to encode 
+	raw video into streaming data.
+
+	Benefit: The primary benefit of hardware encoders is they process data incredibly fast. 
+	Drawback: Costly
+Example:
+	TriCaster 8000, Teradek VidiU and Teradek Cubes
+		
+Transcoding:
+	Transcode your live stream. Transcoding is the process of creating multiple copies of the same video feed simultaneously 
+	using different bitstream/quality levels. 
+
+	Benefit: This essential feature gives each viewer an optimized experience based on their internet speeds.
+
+Nimble Streamer:
+	Nimble Streamer provides wide feature set for live streaming via various protocols.
+
+	Can be installed on any Operating system.
+	It uses dynamic packiging not static packaging.
+	
+
+
+
+
