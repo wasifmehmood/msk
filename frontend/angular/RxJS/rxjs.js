@@ -122,3 +122,28 @@ stockPoller$.unsubscribe();
 // https://www.youtube.com/watch?v=VLGCCpOWFFw&t=2017s
 // https://www.youtube.com/watch?v=UHI0AzD_WfY&t=1602s
 
+
+
+// exhaustMap: The exhaustMap operator is used to flatten an observable sequence by ignoring new inner observables 
+// while an inner observable is still active. It waits for the current inner observable to complete before subscribing
+// to the next one. This ensures that only one inner observable is active at a time. If a new outer value arrives while 
+// an inner observable is active, it is ignored until the inner observable completes. Once the inner observable completes, 
+// it allows the next outer value to trigger the subscription to a new inner observable.
+
+// concatMap: The concatMap operator is used to sequentially flatten an observable sequence. It maintains the order of the 
+// emitted values and subscribes to the next inner observable only after the current inner observable has completed. 
+// It guarantees that the order of the emitted values will be the same as the order of the outer observable sequence.
+
+// mergeMap (or flatMap): The mergeMap operator is used to concurrently flatten an observable sequence. It subscribes to 
+// all inner observables as they arrive, allowing for parallel execution of inner observables. The emitted values are merged 
+// together in the order of their arrival, resulting in a non-deterministic order of the output.
+
+// switchMap: The switchMap operator is used to flatten an observable sequence by canceling the previous inner observable as 
+// soon as a new outer value arrives. It switches to the latest inner observable emitted by the outer observable and 
+// unsubscribes from the previous inner observable. This is useful when you want to respond only to the latest value and
+// ignore the previous values.
+
+// forkJoin: The forkJoin operator is used to combine multiple observables into a single observable that emits an array of 
+// the last values from each input observable. It waits for all input observables to complete and then emits a single array 
+// containing the last value from each observable. It is commonly used for making multiple requests in parallel and waiting 
+// for all responses to arrive before performing further operations.

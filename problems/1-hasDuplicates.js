@@ -27,6 +27,17 @@ function hasDuplicates2(...args){
     return false;
 }
 
+function hasDuplicates3(...args){
+    const object = new Object();
+
+    for(let num of args){
+        if(object[num]) return true;
+        else object[num] = true;
+    }
+
+    return false;
+}
+
 const t2 = performance.now();
 console.log(hasDuplicates2(1,2,3,11,4,5,6));
 const t3 = performance.now();
